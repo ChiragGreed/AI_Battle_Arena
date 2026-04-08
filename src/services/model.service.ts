@@ -13,7 +13,7 @@ export const MistralModel = new MistralAIEmbeddings({
   apiKey: config.process.env.MISTRAL_API_KEY
 })
 
-const CohereModel = new CohereEmbeddings({
+export const CohereModel = new CohereEmbeddings({
   model: "embed-english-v3.0",
   apiKey: config.process.env.COHERE_API_KEY
 });
